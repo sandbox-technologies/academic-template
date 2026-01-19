@@ -9,8 +9,8 @@ export default function Sidebar() {
       {/* Profile Photo */}
       <div className="mb-6">
         <Image
-          src="/profile.png"
-          alt="Quentin Romero Lauro"
+          src="/profile.svg"
+          alt="Profile photo"
           width={260}
           height={260}
           className="profile-image w-full rounded"
