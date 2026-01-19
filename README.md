@@ -1,20 +1,19 @@
-# Quentin Romero Lauro - Personal Website
+# Academic Personal Website Template
 
-A clean, modern personal website built with Next.js 14, React, and Tailwind CSS.
-
-**Live site:** [quentinromerolauro.com](https://quentinromerolauro.com)
+A clean, modern academic personal website template built with Next.js 14, React, and Tailwind CSS. Perfect for researchers, PhD students, professors, and academics who want a professional online presence.
 
 ## Features
 
-- **Clean, Professional Design**: Inspired by academic personal websites with a focus on readability
+- **Clean, Professional Design**: Minimalist academic aesthetic with focus on readability
 - **Responsive Layout**: Works great on desktop and mobile devices
 - **Easy to Customize**: Simple component-based architecture
 - **Fast Performance**: Built with Next.js for optimal loading times
 - **SEO Friendly**: Server-side rendered pages with proper meta tags
+- **Publications Support**: Organized by year with co-author notation support
 
 ## Pages
 
-- **Home**: Main profile page with sidebar (photo, contact, mentees) and main content (about, impact, education, publications)
+- **Home**: Main profile page with sidebar (photo, contact info, collaborators) and main content (about, research, publications)
 - **Papers**: Organized publications list by year
 - **Blog**: Simple blog listing page
 
@@ -56,26 +55,26 @@ pnpm dev
 
 Edit the following files to customize your profile:
 
-- `src/components/Sidebar.tsx` - Your name, title, email, advisor, mentees
-- `src/components/MainContent.tsx` - About section, research impact, education, publications
+- `src/components/Sidebar.tsx` - Your name, title, email, affiliations, collaborators
+- `src/components/MainContent.tsx` - About section, research, education, publications
 - `src/components/Header.tsx` - Navigation and social links
+- `src/app/layout.tsx` - Page title and meta description
 
 ### Adding Your Photo
 
-Replace `public/profile.svg` with your own profile photo (e.g., `profile.jpg` or `profile.png`). 
-Recommended dimensions: 260x320 pixels or similar aspect ratio.
-Then update `src/components/Sidebar.tsx` to use your new filename.
-
-### Adding a Book Cover
-
-If you have a book, replace `public/book-cover.svg` with your book cover image.
-Then update `src/components/MainContent.tsx` to use your new filename.
+Replace `public/profile.png` with your own profile photo.
+Recommended dimensions: Square or near-square (e.g., 260x260 or 300x300 pixels).
 
 ### Publications
 
 Edit the publications in:
 - `src/components/MainContent.tsx` - Featured publications on homepage
 - `src/app/papers/page.tsx` - Full publications list
+
+Publications support:
+- Co-first author notation (e.g., `Author1*, Author2*` with a note)
+- "To appear" venues
+- Multiple link types (Paper, Code, Demo, etc.)
 
 ### Blog Posts
 
@@ -89,12 +88,11 @@ Edit blog posts in `src/app/blog/page.tsx`. For a full blog with individual post
 ```
 academic-template/
 ├── public/
-│   ├── profile.svg         # Your profile photo (replace with jpg/png)
-│   └── book-cover.svg      # Book cover (optional, replace with your image)
+│   └── profile.png         # Your profile photo
 ├── src/
 │   ├── app/
 │   │   ├── globals.css     # Global styles
-│   │   ├── layout.tsx      # Root layout
+│   │   ├── layout.tsx      # Root layout with metadata
 │   │   ├── page.tsx        # Home page
 │   │   ├── papers/
 │   │   │   └── page.tsx    # Papers page
@@ -113,8 +111,8 @@ academic-template/
 
 The template uses:
 - **Tailwind CSS** for utility-first styling
-- **Georgia/serif fonts** for an academic feel
-- **Warm brown accent colors** for links
+- **Georgia/serif fonts** for a classic academic feel
+- **Warm brown accent colors** for links (`#8B7355`)
 
 To customize colors, edit `tailwind.config.ts` and `src/app/globals.css`.
 
@@ -126,15 +124,22 @@ To customize colors, edit `tailwind.config.ts` and `src/app/globals.css`.
 2. Import to [Vercel](https://vercel.com)
 3. Deploy
 
+### Netlify
+
+1. Push to GitHub
+2. Import to [Netlify](https://netlify.com)
+3. Set build command: `npm run build`
+4. Set publish directory: `.next`
+
 ### Other Platforms
 
-Build the static site:
+Build the site:
 
 ```bash
 npm run build
 ```
 
-The output will be in `.next/` directory.
+The output will be in the `.next/` directory.
 
 ## License
 
