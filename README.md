@@ -1,4 +1,4 @@
-# Academic Personal Website Template
+# <img src="public/logo.png" alt="Inspector" width="28" height="28" style="vertical-align: middle; margin-right: 8px; padding-bottom: 6px" /> Academic Personal Website Template
 
 A clean, modern academic personal website template built with Next.js 14, React, and Tailwind CSS. Perfect for researchers, PhD students, professors, and academics who want a professional online presence.
 
@@ -144,3 +144,7 @@ The output will be in the `.next/` directory.
 ## License
 
 MIT License - feel free to use this template for your personal website!
+
+---
+
+Built with Inspector. Learn more at [tryinspector.com](https://tryinspector.com)
