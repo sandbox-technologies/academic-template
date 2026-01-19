@@ -2,6 +2,8 @@
 
 A clean, modern academic personal website template built with Next.js 14, React, and Tailwind CSS. Perfect for researchers, PhD students, professors, and academics who want a professional online presence.
 
+![Academic Template Preview](public/preview-image.png)
+
 ## Features
 
 - **Clean, Professional Design**: Minimalist academic aesthetic with focus on readability
